@@ -67,8 +67,8 @@ test "email validation should reject invalid addresses" do
     assert_not @user.valid?
   end
   
-  test "password should have a minimum lengt" do
-    @user.password = @user.password_confirmation = "a"*6
+  test "password should have a minimum length" do
+    @user.password = @user.password_confirmation = "a"*5
     assert_not @user.valid?
   end
   
